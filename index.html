@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            background-color: darkgray;
+            grid-column: 1/4;
+            grid-row: 1 / 2;
+        }
+
+        .sidebar {
+            background-color: lightgreen;
+        }
+
+        .main {
+            background-color: bisque;
+            display: grid;
+  width: 100%;
+  height: 400px;
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows: 80px 1fr 1fr 100px;
+  gap: 1rem;
+        }
+
+        .footer {
+            background-color: darkgrey;
+            grid-column: 1/4;
+        }
+
+        .footer-flex {
+            flex-direction: row;
+            background-color:darkgray;
+            display: flex;
+            margin: 5px;
+            align-items: stretch;
+            height: 10vh;
+        }
+
+        .ff {
+            padding: 20px;
+            margin: 10px;
+        }
+        .content-2 {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+
+.content-3 {
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+}
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 10% 1fr 10%;
+            height: 90vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">Шапка страницы</header>
+        <aside class="sidebar">Боковая часть</aside>
+        <main class="main">Основная часть
+        <div class="content-2">Ещё 1</div>
+        <div class="content-3">Ещё 2</div></main>
+        <footer class="footer">Подвал
+            <div class="footer-flex">
+                <p class="ff">Секция футера 1</p>
+                <p class="ff">Секция футера 2</p>
+                <p class="ff">Секция футера 3</p>
+                <p class="ff">Секция футера 4</p>
+        </footer>
+    </div>
+</body>
+
+</html>
